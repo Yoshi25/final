@@ -1,8 +1,13 @@
-import '../styles/main.scss'
-import ActiveNav from './modules/activeNav';
+// デフォルトのテーマ
+import '@splidejs/splide/css';
 
-if(document.getElementById('js-nav') !== null){
-	new ActiveNav({
-		navElement: 'js-nav'
-	})
-}
+// または、そのほかのテーマ
+import '@splidejs/splide/css/skyblue';
+import '@splidejs/splide/css/sea-green';
+
+// あるいは、コアスタイルのみ
+import '@splidejs/splide/css/core';
+
+import Splide from '@splidejs/splide';
+
+new Splide( '.splide' ).mount();
